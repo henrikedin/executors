@@ -42,6 +42,11 @@ public:
 
   executor_type get_executor() const noexcept;
 
+  std::size_t outstanding_work() const
+  {
+    return _Outstanding_work();
+  }
+
   void stop();
   void join();
 

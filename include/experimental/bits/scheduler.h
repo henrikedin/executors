@@ -107,6 +107,11 @@ public:
       _Stop();
   }
 
+  ptrdiff_t _Outstanding_work() const
+  {
+	  return _M_outstanding_work;
+  }
+
   void _Stop()
   {
     lock_guard<mutex> __lock(_M_mutex);
